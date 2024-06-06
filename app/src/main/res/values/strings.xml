@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">notebook</string>
+    <string name="splash_text">Добро пожаловать в</string>
+    <string name="splash_countdown_text">NoteBook</string>
+
+
+    <string name="title_hint">Title</string>
+    <string name="content_hint">Write your note here</string>
+    <string name="image_description">Image</string>
+    <string name="add_image">Add Image</string>
+    <string name="recognize_text">Recognize Text</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="save_pdf">Save as PDF</string>
+    <string name="search_hint">Поиск заметок...</string>
+
+</resources>

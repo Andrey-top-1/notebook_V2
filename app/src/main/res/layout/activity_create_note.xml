@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".CreateNoteActivity">
+
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="260dp"
+        android:layout_height="39dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_toStartOf="@+id/deleteButton"
+        android:layout_toEndOf="@+id/saveButton"
+        android:textColor="@color/black" />
+
+
+
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/deleteButton"
+        android:layout_width="43dp"
+        android:layout_height="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintBottom_toTopOf="@+id/titleEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.563"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/colorIcons" />
+
+    <ImageView
+        android:id="@+id/saveButton"
+        android:layout_width="39dp"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/app_name"
+
+        android:src="@drawable/ic_back"
+        app:layout_constraintBottom_toTopOf="@+id/titleEditText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.269"
+        app:tint="@color/colorIcons" />
+
+    <ImageView
+        android:id="@+id/layoutQuickActions"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"
+        android:background="@color/colorPrimary"
+        android:padding="28dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/addImageButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="-5dp"
+        android:layout_marginBottom="25dp"
+        android:src="@drawable/ic_addimage" />
+
+    <ImageView
+        android:id="@+id/saveAsPDFBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="-5dp"
+        android:layout_marginBottom="25dp"
+        android:layout_toEndOf="@+id/addImageButton"
+        android:src="@drawable/pdf" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/voiceBtn"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginStart="25dp"-->
+<!--        android:layout_marginTop="-5dp"-->
+<!--        android:layout_marginBottom="25dp"-->
+<!--        android:layout_toEndOf="@+id/saveAsPDFBtn"-->
+<!--        android:src="@drawable/ic_voic" />-->
+
+    <EditText
+        android:id="@+id/contentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleEditText"
+        android:layout_margin="16dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="248dp"
+        android:layout_height="299dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-4dp"
+        android:layout_marginBottom="238dp"
+        android:scaleType="centerInside" />
+
+
+
+
+</RelativeLayout>
